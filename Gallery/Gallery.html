@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+     <meta  content="width=device-width,initial-scale=1.0">
+     <meta charset="utf-8">
+     <title>portfolio</title>
+     <link rel="stylesheet"  href="Home.css">
+     <link rel="stylesheet"  href="Gallery.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="gray" scrollamount="20"><h1>please Come And See Our Website</h1></marquee>
+    <header>
+     <div class="menu-bar">
+
+          <div style="background-image: url('6.jpg')">
+     <ul>  
+   
+          <li><a href="Home.html"><i class="fa fa-home"></i> Home</a> </li>
+          <li><a href="Gallery.html"><i class="fa fa-camera"></i>Gallery</a></li>
+          <li><a href="About Us.html"><i class="fa fa-meetup"></i> About Us </a></li>
+          <li><a href="Notics.html"><i class="fa fa-fax"></i>Notics </a> </li>
+          <li><a href="ECA.html"><i class="fa fa-bug"></i>ECA</a> </li>
+          <li><a href="RESULT.html"><i class="fa fa-bolt"></i> Forums  </a>    </li>  
+          <li><a href="CONTACT.html"><i class="fa fa-address-book"></i>CONTACT </a>   </li>
+<div class="topnav"><br>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>    
+     </ul>
+ </div></div>
+</header>
+ <marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="#000080" scrollamount="10"><h2>Well-Come To Our Project-X Group Team</h2></marquee>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>X - PHOTOS</h1>
+<hr>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="mountains.jpg" alt="Mountains" style="width:100%">
+      <h3>MOUNTAINS</h3>
+    <p> Nepal contains part of the Himalayas, the highest mountain range in the world. Eight of the fourteen eight-thousanders are located in the country, either in whole or shared across a border with China or India. Nepal has the highest mountain in the world, Mount Everest.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="lights.jpg" alt="Lights" style="width:100%">
+      <h3>LIGHTS</h3>
+      <p> Nepal contains part of the Himalayas, the highest mountain range in the world. Eight of the fourteen eight-thousanders are located in the country, either in whole or shared across a border with China or India. Nepal has the highest mountain in the world, Mount Everest.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="nature.jpg" alt="Nature" style="width:100%">
+      <h3>NATURES</h3>
+      <p> Nepal contains part of the Himalayas, the highest mountain range in the world. Eight of the fourteen eight-thousanders are located in the country, either in whole or shared across a border with China or India. Nepal has the highest mountain in the world, Mount Everest.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="mountains.jpg" alt="Mountains" style="width:100%">
+      <h3>MOUNTAINS</h3>
+     <p> Nepal contains part of the Himalayas, the highest mountain range in the world. Eight of the fourteen eight-thousanders are located in the country, either in whole or shared across a border with China or India. Nepal has the highest mountain in the world, Mount Everest.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="p3.jpg" alt="Bear" style="width:100%">
+  <h3>Giant panda</h3>
+  <p>The giant panda, also known as the panda bear or simply the panda, is a bear native to south central China. It is characterised by large, black patches around its eyes, over the ears, and across its round body. The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid. Wikipedia</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
+
+
